@@ -1,10 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
 <head>
     <meta charset="UTF-8">
     <title>Kyberdetektiv</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
+
+<main>
+
+   <section id="uvod">
+
+<h1>Kyberdetektiv</h1>
+    <p>Staň se kyberdetektivem a vyřeš šest případů ze světa internetových podvodů a
+        kybernetické bezpečnosti. Prozkoumej podezřelé situace, zvol bezpečný postup a
+        rozhodni, jak moc své odpovědi věříš. Dokážeš odhalit hrozby a získat všech 18 bodů?</p>
+    <h2>Pravidla hry</h2>
+<ul>
+
+   <li>U každého případu si přečti zadání a vyber jednu ze tří odpovědí.</li>
+    <li>Poté odpověď potvrď volbou „Jsem si jistý“ nebo „Nejsem si jistý“.</li>
+    <li>Pokud si jsi jistý, za správnou odpověď získáš 3 body, za chybnou ztratíš 2 body.</li>
+    <li>Pokud si nejsi jistý, za správnou odpověď získáš 1 bod, za chybnou žádné body nezískáš ani neztratíš.</li>
+    <li>Po potvrzení se zobrazí správné řešení a vysvětlení. Odpověď už nelze změnit.</li>
+    <li>Na konci šestého případu uvidíš své výsledky. Skóre může být i záporné.</li>
+
+</ul>
+
+<button id="start">Zahájit vyšetřování</button>
+
+   </section>
+
+    <section id="hra" hidden="hidden">
+        <p>Skore: <span id="skore">0</span></p>
+        <h2>Případ 1: Zablokovaný účet</h2>
+        <p>Uživateli přišla SMS údajně od banky</p>
+        <blockquote>Váš účet byl zablokován. Pro obnovení přístupu se přihlaste na banka-overeni.example.</blockquote>
+        <p>Jak budeš postupovat?</p>
+        <button id="A">Otevřu odkaz a přihlásím se.</button>
+        <button id="B">Otevřu si samostatně oficiální aplikaci banky a ověřím situaci.</button>
+        <button id="C">Odpovím na SMS a požádám o další informace.</button>
+
+        <div id="jistota" hidden="hidden">
+            <p>Jak moc si věříš?</p>
+            <button id="jisty">Jsem si jistý</button>
+            <button id="nejisty">Nejsem si jistý</button>
+        </div>
+       <p id="vysledek"></p>
+    </section>
+
+</main>
 
 
 </body>
