@@ -34,9 +34,9 @@
 
     <section id="hra" hidden="hidden">
         <p>Skore: <span id="skore">0</span></p>
-        <h2>Případ 1: Zablokovaný účet</h2>
-        <p>Uživateli přišla SMS údajně od banky</p>
-        <blockquote>Váš účet byl zablokován. Pro obnovení přístupu se přihlaste na banka-overeni.example.</blockquote>
+        <h2 id="nazevPripadu">Případ 1: Zablokovaný účet</h2>
+        <p id="popisPripadu">Uživateli přišla SMS údajně od banky</p>
+        <blockquote id="dukaz">Váš účet byl zablokován. Pro obnovení přístupu se přihlaste na banka-overeni.example.</blockquote>
         <p>Jak budeš postupovat?</p>
         <button id="A">Otevřu odkaz a přihlásím se.</button>
         <button id="B">Otevřu si samostatně oficiální aplikaci banky a ověřím situaci.</button>
@@ -47,7 +47,9 @@
             <button id="jisty">Jsem si jistý</button>
             <button id="nejisty">Nejsem si jistý</button>
         </div>
-       <p id="vysledek"></p>
+        <p id="vysledek"></p>
+        <p id="vysvetleni"></p>
+        <button id="dalsi" hidden="hidden">Další případ</button>
     </section>
 
 </main>
